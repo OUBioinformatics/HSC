@@ -17,13 +17,19 @@ NOTE: Only $freads and $rreads are required.  If additional parameters are given
 
 ### WHAT DOES IT DO ?
 
-```
+```sh
 REMOVE NEXTERA ADAPTERS IF PRESENT
 ```
-             |
-             |
-            \ /
-```
+   ;;;;;
+   ;;;;;
+   ;;;;;
+   ;;;;;
+ ..;;;;;..
+  ':::::'
+    ':`
+
+
+```sh
 FIND CONTAMINAITNG ILLUMINA ADAPTERS OR OTHER OVERREPRESENTED SEQUENCES
 ```
   
