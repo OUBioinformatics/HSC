@@ -1,7 +1,9 @@
 ### USAGE
 
+```sh
 perl Illumina_Trim.pl $freads $rreads $minlen $maxlen $minQ $output_folder
-
+  ```
+  
 where
 
 - $freads = file path to forward reads
