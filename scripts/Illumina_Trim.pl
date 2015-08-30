@@ -34,15 +34,23 @@ sub get_file_data
      }
 
 #-----------------------------------------------------------------------------
-#-----------------------------------------------------------------------------
+# Input parameters
 #-----------------------------------------------------------------------------
 
 my $ForwardReads = $ARGV[0];
 my $ReverseReads = $ARGV[1];
-my $ResultDirectory = $ARGV[2];
-if (not defined $ARGV[2] ) {
-    $ResultDirectory = cwd();
-}
+my $minLen = $ARGV[2];
+my $maxLen = $ARGV[3];
+my $minQ = $ARGV[4];
+my $ResultDirectory = $ARGV[5];
+
+
+if (not defined $ARGV[2] ) { $minLen = 50;}
+if (not defined $ARGV[3] ) { $maxLen = 250;}
+if (not defined $ARGV[4] ) { $minQ =30;}
+if (not defined $ARGV[5] ) { $ResultDirectory = cwd();}
+    
+    
 my @adapter_array;
 
 #-----------------------------------------------------------------------------
@@ -81,7 +89,7 @@ system("fastqc ".$ReverseReads." -o ".$ResultDirectory);
 #-----------------------------------------------------------------------------
 
 my $system_string;
-$system_string = "trim_galore --phred33 --paired -q 30 --nextera -o ".$ResultDirectory."/ ".$ForwardReads." ".$ReverseReads;
+$system_string = "trim_galore --phred33 --paired -q ".$minQ." --nextera -o ".$ResultDirectory."/ ".$ForwardReads." ".$ReverseReads;
 system($system_string);
 my $f_b = $ForwardReads; $f_b =~ s/.fastq//;
 my $r_b = $ReverseReads; $r_b =~ s/.fastq//;
@@ -169,7 +177,7 @@ foreach my $s (@Ranalysis)
   }
 
 push (@adapter_array, "-e 0.15");
-push (@adapter_array, "-q 30");
+push (@adapter_array, "-q ".$minQ);
 push (@adapter_array, "-n 2");
 
 
@@ -195,9 +203,9 @@ system ("cutadapt ".$confstring.$ReverseReads." > ".$ResultDirectory."/temp/".$R
 #-trim to Q30-----------------------------------------------------------------
 #-----------------------------------------------------------------------------
 
-$confstring = "read_fastq -e base_33 -i ".$ResultDirectory."/temp/".$Ffilename.".cutadapt | trim_seq -m 30 | write_fastq -o ".$ResultDirectory."/temp/".$Ffilename.".cutadapt.q30 -x\n";
+$confstring = "read_fastq -e base_33 -i ".$ResultDirectory."/temp/".$Ffilename.".cutadapt | trim_seq -m ".$minQ." | write_fastq -o ".$ResultDirectory."/temp/".$Ffilename.".cutadapt.q30 -x\n";
 system ($confstring);
-$confstring = "read_fastq -e base_33 -i ".$ResultDirectory."/temp/".$Rfilename.".cutadapt | trim_seq -m 30 | write_fastq -o ".$ResultDirectory."/temp/".$Rfilename.".cutadapt.q30 -x\n";
+$confstring = "read_fastq -e base_33 -i ".$ResultDirectory."/temp/".$Rfilename.".cutadapt | trim_seq -m ".$minQ." | write_fastq -o ".$ResultDirectory."/temp/".$Rfilename.".cutadapt.q30 -x\n";
 system ($confstring);
 
 #-----------------------------------------------------------------------------
@@ -213,7 +221,7 @@ system($confstring);
 #-MINLEN: 50; paired only; MAXLEN (CROP):250----------------------------------
 #-----------------------------------------------------------------------------
 
-$confstring = "trimmomatic PE -phred33 ".$ResultDirectory."/temp/".$Ffilename.".cutadapt.q30.trimmed ".$ResultDirectory."/temp/".$Rfilename.".cutadapt.q30.trimmed ".$Ffilename.".trimmed.paired.fq.gz.fastq ".$Ffilename.".trimmed.unpaired.fq.gz ".$Rfilename.".trimmed.paired.fq.gz.fastq ".$Rfilename.".trimmed.unpaired.fq.gz MINLEN:50 CROP:250";
+$confstring = "trimmomatic PE -phred33 ".$ResultDirectory."/temp/".$Ffilename.".cutadapt.q30.trimmed ".$ResultDirectory."/temp/".$Rfilename.".cutadapt.q30.trimmed ".$Ffilename.".trimmed.paired.fq.gz.fastq ".$Ffilename.".trimmed.unpaired.fq.gz ".$Rfilename.".trimmed.paired.fq.gz.fastq ".$Rfilename.".trimmed.unpaired.fq.gz MINLEN:".$minLen." CROP:".$maxLen;
 printf "\n\n".$confstring."\n\n";
 system($confstring);
 
