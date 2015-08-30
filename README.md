@@ -26,16 +26,16 @@ This docker contains :
 
 DOCKER ‘bwawrik/bioinformatics:latest’ Software contents:
 
-Bioperl			http://www.bioperl.org/wiki/Main_Page
-Biopieces			https://code.google.com/p/biopieces/
-Biopython    			http://biopython.org/wiki/Main_Page    	
-BLAST suite 			http://blast.ncbi.nlm.nih.gov	
-blat           			http://www.kentinformatics.com/
-bowtie          			http://bowtie-bio.sourceforge.net/index.shtml	
-bowtie2			http://bowtie-bio.sourceforge.net/bowtie2/index.shtml
-bwa            			http://bio-bwa.sourceforge.net/
-CAP3			http://seq.cs.iastate.edu/cap3.html
-CDBtools			http://sourceforge.net/projects/cdbtools/	
+- Bioperl			http://www.bioperl.org/wiki/Main_Page
+- Biopieces			https://code.google.com/p/biopieces/
+- Biopython    			http://biopython.org/wiki/Main_Page    	
+- BLAST suite 			http://blast.ncbi.nlm.nih.gov	
+- blat           			http://www.kentinformatics.com/
+- bowtie          			http://bowtie-bio.sourceforge.net/index.shtml	
+- bowtie2			http://bowtie-bio.sourceforge.net/bowtie2/index.shtml
+- bwa http://bio-bwa.sourceforge.net/
+- CAP3			http://seq.cs.iastate.edu/cap3.html
+- CDBtools			http://sourceforge.net/projects/cdbtools/	
 cd-hit			http://weizhongli-lab.org/cd-hit/	
 ChimeraSlayer		http://microbiomeutil.sourceforge.net/	
 Cutadapt			https://code.google.com/p/cutadapt/
@@ -48,7 +48,7 @@ fastx-toolkit 0.0.12  		http://hannonlab.cshl.edu/fastx_toolkit/
 FragGeneScan		http://omics.informatics.indiana.edu/FragGeneScan/	
 gnuplot         			http://www.gnuplot.info/	
 HMMER 3.0       		http://hmmer.janelia.org/	
-HomerTools			http://homer.salk.edu/homer/ngs/homerTools.html	
+HomerTools			http://homer.salk.edu/homer/ngs/homerTools.html	- 
 idba				https://code.google.com/p/hku-idba/
 Jellyfish      	 		http://www.genome.umd.edu/jellyfish.html	
 MaxBin			http://sourceforge.net/projects/maxbin/
