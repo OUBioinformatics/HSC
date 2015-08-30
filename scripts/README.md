@@ -18,11 +18,20 @@ NOTE: Only $freads and $rreads are required.  If additional parameters are given
 ### WHAT DOES IT DO ?
 
 ```sh
+GENERATE QC REPORT BEFORE TRIMMING
+
+       ;;;;;
+       ;;;;;
+       ;;;;;            (FastQC)
+     ..;;;;;..
+      ':::::'
+        ':`
+
 REMOVE NEXTERA ADAPTERS IF PRESENT
 
        ;;;;;
        ;;;;;
-       ;;;;;
+       ;;;;;            (TrimGalore)
      ..;;;;;..
       ':::::'
         ':`
@@ -32,7 +41,7 @@ FIND CONTAMINAITNG ILLUMINA ADAPTERS OR OTHER OVERREPRESENTED SEQUENCES
 
        ;;;;;
        ;;;;;
-       ;;;;;
+       ;;;;;            (Custom perl code)
      ..;;;;;..
       ':::::'
         ':`
@@ -41,7 +50,7 @@ REMOVE ILLUMINA ADAPTERS AND OVERREPRESENTED SDEQUENCES
 
        ;;;;;
        ;;;;;
-       ;;;;;
+       ;;;;;            (Cutadapt)
      ..;;;;;..
       ':::::'
         ':`
@@ -50,7 +59,7 @@ TRIM TO Q30
 
        ;;;;;
        ;;;;;
-       ;;;;;
+       ;;;;;            (HomerTools)
      ..;;;;;..
       ':::::'
         ':`
@@ -60,13 +69,30 @@ REMOVE POLY A ARTIFACTS
 
        ;;;;;
        ;;;;;
+       ;;;;;            (HomerTools)
+     ..;;;;;..
+      ':::::'
+        ':`
+
+TRIM SEQUENCES TO $minlen $maxlen $minQ
+
        ;;;;;
+       ;;;;;
+       ;;;;;            (Biopieces)
      ..;;;;;..
       ':::::'
         ':`
 
 WRITE FASTQ AND FASTA FILE
 
+       ;;;;;
+       ;;;;;
+       ;;;;;            (FastQC)
+     ..;;;;;..
+      ':::::'
+        ':`
+
+GENERATE QC REPORT AFTER TRIMMING
 
 ```
   
