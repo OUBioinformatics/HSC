@@ -20,16 +20,53 @@ NOTE: Only $freads and $rreads are required.  If additional parameters are given
 ```sh
 REMOVE NEXTERA ADAPTERS IF PRESENT
 
-   ;;;;;
-   ;;;;;
-   ;;;;;
-   ;;;;;
- ..;;;;;..
-  ':::::'
-    ':`
+       ;;;;;
+       ;;;;;
+       ;;;;;
+     ..;;;;;..
+      ':::::'
+        ':`
 
-
-```sh
 FIND CONTAMINAITNG ILLUMINA ADAPTERS OR OTHER OVERREPRESENTED SEQUENCES
+
+
+       ;;;;;
+       ;;;;;
+       ;;;;;
+     ..;;;;;..
+      ':::::'
+        ':`
+
+REMOVE ILLUMINA ADAPTERS AND OVERREPRESENTED SDEQUENCES
+
+       ;;;;;
+       ;;;;;
+       ;;;;;
+     ..;;;;;..
+      ':::::'
+        ':`
+
+TRIM TO Q30
+
+       ;;;;;
+       ;;;;;
+       ;;;;;
+     ..;;;;;..
+      ':::::'
+        ':`
+
+REMOVE POLY A ARTIFACTS
+
+
+       ;;;;;
+       ;;;;;
+       ;;;;;
+     ..;;;;;..
+      ':::::'
+        ':`
+
+WRITE FASTQ AND FASTA FILE
+
+
 ```
   
