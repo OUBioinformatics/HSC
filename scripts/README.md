@@ -78,7 +78,7 @@ TRIM SEQUENCES TO $minlen $maxlen $minQ
 
        ;;;;;
        ;;;;;
-       ;;;;;            (Biopieces)
+       ;;;;;            (Trimmomatic)
      ..;;;;;..
       ':::::'
         ':`
@@ -87,12 +87,21 @@ WRITE FASTQ AND FASTA FILE
 
        ;;;;;
        ;;;;;
-       ;;;;;            (FastQC)
+       ;;;;;            (Biopieces)
      ..;;;;;..
       ':::::'
         ':`
 
 GENERATE QC REPORT AFTER TRIMMING
+
+       ;;;;;
+       ;;;;;
+       ;;;;;            (FastQC)
+     ..;;;;;..
+      ':::::'
+        ':`
+
+FINAL QCed OUTPUT FILES
 
 ```
   
