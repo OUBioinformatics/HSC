@@ -74,7 +74,7 @@ REMOVE POLY A ARTIFACTS
       ':::::'
         ':`
 
-TRIM SEQUENCES TO $minlen $maxlen $minQ
+TRIM SEQUENCES TO $minlen $maxlen $minQ; REMOVE UNPAIRED REDAS
 
        ;;;;;
        ;;;;;
