@@ -36,37 +36,37 @@ DOCKER ‘bwawrik/bioinformatics:latest’ Software contents:
 - bwa http://bio-bwa.sourceforge.net/
 - CAP3			http://seq.cs.iastate.edu/cap3.html
 - CDBtools			http://sourceforge.net/projects/cdbtools/	
-cd-hit			http://weizhongli-lab.org/cd-hit/	
-ChimeraSlayer		http://microbiomeutil.sourceforge.net/	
-Cutadapt			https://code.google.com/p/cutadapt/
-CytoScape			http://www.cytoscape.org/	
-Diamond			http://ab.inf.uni-tuebingen.de/software/diamond/
-ea-utils.1.1.2-537     		https://code.google.com/p/ea-utils/		
-EMIRGE			https://github.com/csmiller/EMIRGE
-FastQC			http://www.bioinformatics.babraham.ac.uk/projects/fastqc/
-fastx-toolkit 0.0.12  		http://hannonlab.cshl.edu/fastx_toolkit/		
-FragGeneScan		http://omics.informatics.indiana.edu/FragGeneScan/	
-gnuplot         			http://www.gnuplot.info/	
-HMMER 3.0       		http://hmmer.janelia.org/	
-HomerTools			http://homer.salk.edu/homer/ngs/homerTools.html	- 
-idba				https://code.google.com/p/hku-idba/
-Jellyfish      	 		http://www.genome.umd.edu/jellyfish.html	
-MaxBin			http://sourceforge.net/projects/maxbin/
-MEGAN 4         		http://ab.inf.uni-tuebingen.de/software/megan5/	
-mummer          		http://mummer.sourceforge.net/	
-muscle          			http://www.ebi.ac.uk/Tools/msa/muscle/	
-prodigal			http://prodigal.ornl.gov/
-Pysam			https://pypi.python.org/packages/source/p/pysam/	
-Ray 2.2.0			http://denovoassembler.sourceforge.net/
-RDP Classifier		http://downloads.sourceforge.net/project/rdp-classifier	
-Samtools			http://samtools.sourceforge.net/
-SeqPrep			https://github.com/jstjohn/SeqPrep	
-SMALT           		https://www.sanger.ac.uk/resources/software/smalt/	
-SourceTracker		http://downloads.sourceforge.net/project/sourcetracker	
-Trimmomatic			http://www.usadellab.org/cms/?page=trimmomatic	
-Velvet    			https://www.ebi.ac.uk/~zerbino/velvet/	
-vserach			https://github.com/torognes/vsearch
-RAPSearch2.23_64bits  http://sourceforge.net/projects/rapsearch2/
+- cd-hit			http://weizhongli-lab.org/cd-hit/	
+- ChimeraSlayer		http://microbiomeutil.sourceforge.net/	
+- Cutadapt			https://code.google.com/p/cutadapt/
+- CytoScape			http://www.cytoscape.org/	
+- Diamond			http://ab.inf.uni-tuebingen.de/software/diamond/
+- ea-utils.1.1.2-537     		https://code.google.com/p/ea-utils/		
+- EMIRGE			https://github.com/csmiller/EMIRGE
+- FastQC			http://www.bioinformatics.babraham.ac.uk/projects/fastqc/
+- fastx-toolkit 0.0.12  		http://hannonlab.cshl.edu/fastx_toolkit/		
+- FragGeneScan		http://omics.informatics.indiana.edu/FragGeneScan/	
+- gnuplot         			http://www.gnuplot.info/	
+- HMMER 3.0       		http://hmmer.janelia.org/	
+- HomerTools			http://homer.salk.edu/homer/ngs/homerTools.html	- 
+- idba				https://code.google.com/p/hku-idba/
+- Jellyfish      	 		http://www.genome.umd.edu/jellyfish.html	
+- MaxBin			http://sourceforge.net/projects/maxbin/
+- MEGAN 4         		http://ab.inf.uni-tuebingen.de/software/megan5/	
+- mummer          		http://mummer.sourceforge.net/	
+- muscle          			http://www.ebi.ac.uk/Tools/msa/muscle/	
+- prodigal			http://prodigal.ornl.gov/
+- Pysam			https://pypi.python.org/packages/source/p/pysam/	
+- Ray 2.2.0			http://denovoassembler.sourceforge.net/
+- RDP Classifier		http://downloads.sourceforge.net/project/rdp-classifier	
+- Samtools			http://samtools.sourceforge.net/
+- SeqPrep			https://github.com/jstjohn/SeqPrep	
+- SMALT           		https://www.sanger.ac.uk/resources/software/smalt/	
+- SourceTracker		http://downloads.sourceforge.net/project/sourcetracker	
+- Trimmomatic			http://www.usadellab.org/cms/?page=trimmomatic	
+- Velvet    			https://www.ebi.ac.uk/~zerbino/velvet/	
+- vserach			https://github.com/torognes/vsearch
+- RAPSearch2.23_64bits  http://sourceforge.net/projects/rapsearch2/
 
 
 
