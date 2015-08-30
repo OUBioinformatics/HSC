@@ -19,7 +19,7 @@ NOTE: Only $freads and $rreads are required.  If additional parameters are given
 
 ```sh
 REMOVE NEXTERA ADAPTERS IF PRESENT
-```
+
    ;;;;;
    ;;;;;
    ;;;;;
