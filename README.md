@@ -108,8 +108,18 @@ wget https://github.com/OUGenomics/HSC/raw/master/scripts/Illumina_Trim.pl
 
 - copy your data into the folder.  This is also not strictly necessary so long your indicate an output path on the script, but I find its best to just copy the files to run the script. It keeps things together.  
 - Here are some example files:
-- 
 
 
-[[.... COMNING SOON]]
+```sh
+wget https://github.com/bwawrik/MBIO5810/raw/master/sequence_data/232_R1_40k.fastq.gz
+wget https://github.com/bwawrik/MBIO5810/raw/master/sequence_data/232_R2_40k.fastq.gz
+gunzip *
+```
+
+- Now lets run the QC script on the sample files:
+
+```sh
+perl Illumina_Trim.pl 232_R1_40k.fastq.gz 232_R2_40k.fastq.gz 
+```
+
 
