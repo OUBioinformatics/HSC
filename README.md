@@ -117,8 +117,6 @@ perl Illumina_Trim.pl 232_R1_40k.fastq.gz 232_R2_40k.fastq.gz
 
 - This produces a bunch of output files
 
-```sh 
-
 | File | Description |
 | :--- | :---------- |
 |232_R1_40k.fastq ||
@@ -139,10 +137,6 @@ perl Illumina_Trim.pl 232_R1_40k.fastq.gz 232_R2_40k.fastq.gz
 |F.QCed.fastq ||
 |R.QCed.fasta ||
 |R.QCed.fastq  | Reverse reads after QC in fastQ format |
-```
-
-
-
 
 
 
