@@ -100,10 +100,15 @@ docker run -t -i -v /data:/cheesecake bwawrik/bioinformatics:latest
 cd /data
 ```
 
-- copy the perl script into the direcotry. This is not really necessary. I keep all my perl scripts in a t
+- copy the perl script into the direcotry. This is not really necessary. I keep all my perl scripts in a single folder from which I call them (/opt/local/scripts in my case).
+ 
+```sh 
+wget https://github.com/OUGenomics/HSC/raw/master/scripts/Illumina_Trim.pl
+```
 
-https://github.com/OUGenomics/HSC/raw/master/scripts/Illumina_Trim.pl
-
+- copy your data into the folder.  This is also not strictly necessary so long your indicate an output path on the script, but I find its best to just copy the files to run the script. It keeps things together.  
+- Here are some example files:
+- 
 
 
 [[.... COMNING SOON]]
