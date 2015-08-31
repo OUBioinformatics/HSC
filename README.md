@@ -70,6 +70,37 @@ DOCKER ‘bwawrik/bioinformatics:latest’ Software contents:
 
 ### PROCEDURE
 
+- I'm assuming you have a dockerized VM, but his should work no differently on a regular linux box
+- Start by downloading the docker which contains the softare deployment: bwawrik/bioinformatics:latest
+
+```sh 
+docker bwawrik/bioinformatics:latest
+```
+- Make a data directory. I'll make '/data' in root here. Just replace your own path below
+
+```sh 
+mkdir /data
+```
+
+- Start the docker and mount /data. 
+
+```sh 
+docker run -t -i -v /data:/data bwawrik/bioinformatics:latest
+```
+
+- You can mount any directory instead of '/data' here and rename it here. So, for example, if you wanted to mount '/data' as '/cheesecake' you would execute the prior command as:
+
+```sh 
+docker run -t -i -v /data:/cheesecake bwawrik/bioinformatics:latest
+```
+
+- Change your directory to /data
+
+```sh 
+cd /data
+```
+
+- copy the perl script into the direcotry. This is not really necessary. I keep all my perl scripts in a t
 
 https://github.com/OUGenomics/HSC/raw/master/scripts/Illumina_Trim.pl
 
