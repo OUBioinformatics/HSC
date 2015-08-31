@@ -68,6 +68,14 @@ DOCKER ‘bwawrik/bioinformatics:latest’ Software contents:
 - vserach			https://github.com/torognes/vsearch
 - RAPSearch2.23_64bits  http://sourceforge.net/projects/rapsearch2/
 
+### HOW TO USE THE QC SCRIPT
+
+
+
+
+
+
+
 
 ### EXAMPLES OF ISSUES THAT NEEED ADRESSING
 
