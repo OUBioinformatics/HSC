@@ -26,19 +26,19 @@ This docker contains :
 
 DOCKER ‘bwawrik/bioinformatics:latest’ Software contents:
 
-- Bioperl			http://www.bioperl.org/wiki/Main_Page
-- Biopieces			https://code.google.com/p/biopieces/
-- Biopython    			http://biopython.org/wiki/Main_Page    	
-- BLAST suite 			http://blast.ncbi.nlm.nih.gov	
-- blat           			http://www.kentinformatics.com/
-- bowtie          			http://bowtie-bio.sourceforge.net/index.shtml	
-- bowtie2			http://bowtie-bio.sourceforge.net/bowtie2/index.shtml
+- Bioperl http://www.bioperl.org/wiki/Main_Page
+- Biopieces https://code.google.com/p/biopieces/
+- Biopython http://biopython.org/wiki/Main_Page    	
+- BLAST suite http://blast.ncbi.nlm.nih.gov	
+- blat  http://www.kentinformatics.com/
+- bowtie  http://bowtie-bio.sourceforge.net/index.shtml	
+- bowtie2 http://bowtie-bio.sourceforge.net/bowtie2/index.shtml
 - bwa http://bio-bwa.sourceforge.net/
-- CAP3			http://seq.cs.iastate.edu/cap3.html
-- CDBtools			http://sourceforge.net/projects/cdbtools/	
-- cd-hit			http://weizhongli-lab.org/cd-hit/	
-- ChimeraSlayer		http://microbiomeutil.sourceforge.net/	
-- Cutadapt			https://code.google.com/p/cutadapt/
+- CAP3  http://seq.cs.iastate.edu/cap3.html
+- CDBtools  http://sourceforge.net/projects/cdbtools/	
+- cd-hit  http://weizhongli-lab.org/cd-hit/	
+- ChimeraSlayer http://microbiomeutil.sourceforge.net/	
+- Cutadapt  https://code.google.com/p/cutadapt/
 - CytoScape			http://www.cytoscape.org/	
 - Diamond			http://ab.inf.uni-tuebingen.de/software/diamond/
 - ea-utils.1.1.2-537     		https://code.google.com/p/ea-utils/		
