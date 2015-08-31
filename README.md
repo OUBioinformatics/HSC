@@ -68,59 +68,6 @@ DOCKER ‘bwawrik/bioinformatics:latest’ Software contents:
 - vserach			https://github.com/torognes/vsearch
 - RAPSearch2.23_64bits  http://sourceforge.net/projects/rapsearch2/
 
-### PROCEDURE
-
-- I'm assuming you have a dockerized VM, but his should work no differently on a regular linux box
-- Start by downloading the docker which contains the softare deployment: bwawrik/bioinformatics:latest
-
-```sh 
-docker bwawrik/bioinformatics:latest
-```
-- Make a data directory. I'll make '/data' in root here. Just replace your own path below
-
-```sh 
-mkdir /data
-```
-
-- Start the docker and mount /data. 
-
-```sh 
-docker run -t -i -v /data:/data bwawrik/bioinformatics:latest
-```
-
-- You can mount any directory instead of '/data' here and rename it here. So, for example, if you wanted to mount '/data' as '/cheesecake' you would execute the prior command as:
-
-```sh 
-docker run -t -i -v /data:/cheesecake bwawrik/bioinformatics:latest
-```
-
-- Change your directory to /data
-
-```sh 
-cd /data
-```
-
-- copy the perl script into the direcotry. This is not really necessary. I keep all my perl scripts in a single folder from which I call them (/opt/local/scripts in my case).
- 
-```sh 
-wget https://github.com/OUGenomics/HSC/raw/master/scripts/Illumina_Trim.pl
-```
-
-- copy your data into the folder.  This is also not strictly necessary so long your indicate an output path on the script, but I find its best to just copy the files to run the script. It keeps things together.  
-- Here are some example files:
-
-
-```sh
-wget https://github.com/bwawrik/MBIO5810/raw/master/sequence_data/232_R1_40k.fastq.gz
-wget https://github.com/bwawrik/MBIO5810/raw/master/sequence_data/232_R2_40k.fastq.gz
-gunzip *
-```
-
-- Now lets run the QC script on the sample files:
-
-```sh
-perl Illumina_Trim.pl 232_R1_40k.fastq.gz 232_R2_40k.fastq.gz 
-```
 
 ### EXAMPLES OF ISSUES THAT NEEED ADRESSING
 
@@ -128,21 +75,24 @@ perl Illumina_Trim.pl 232_R1_40k.fastq.gz 232_R2_40k.fastq.gz
 
 ![READ QUALITY] (images/E5358E41-40A2-48A0-A2D1-153B48B4C351.jpg)
 
-
 #### UNTRIMMED ADAPTER
 
+![UNTRIMMED ADAPTER] (images/A66A5797-194E-4FD9-B299-7E292A29DDB9.JPG)
 
 #### BIMODALGC-PLOT
 
+![POSSIBLE CONTAMINATION] (images/20256071-7539-4EDC-B5F6-8341F41D86F2.JPG)
 
 #### PROBLEMS WITH ILLUMINA RUN
 
+![POSSIBLE BAD RUN] (images/C2237B90-781F-4D1A-A78E-C3586D9F6A3B.JPG)
 
 #### POLY-N RUNS
 
+![POLY-N RUNS] (images/57EBEB0A-24D1-4CC9-96D2-A852E5A5D7A6.JPG)
 
 #### DEVIATION OF NUCLEOTIDE FREQUENCIES FROM AVERAGE
 
-
+![DEVIATION FROM NUCLEOTIDE FREQUENCY AVERAGES] (images/F6B96830-2700-4CA1-89D3-1EE0AC5E9C89.JPG)
 
 
