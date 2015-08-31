@@ -119,8 +119,8 @@ perl Illumina_Trim.pl 232_R1_40k.fastq.gz 232_R2_40k.fastq.gz
 
 ```sh 
 
- File | Description |
- :--- | :---------- |
+| File | Description |
+| :--- | :---------- |
 |232_R1_40k.fastq ||
 |232_R1_40k.fastq.trimmed.paired.fq.gz_fastqc.html ||
 |232_R1_40k.fastq.trimmed.paired.fq.gz_fastqc.zip ||
