@@ -119,24 +119,22 @@ perl Illumina_Trim.pl 232_R1_40k.fastq.gz 232_R2_40k.fastq.gz
 
 | File | Description |
 | :--- | :---------- |
-|232_R1_40k.fastq ||
-|232_R1_40k.fastq.trimmed.paired.fq.gz_fastqc.html ||
-|232_R1_40k.fastq.trimmed.paired.fq.gz_fastqc.zip ||
-|232_R1_40k.fastq_trimming_report.txt ||
-|232_R1_40k.old ||
-|232_R1_40k_fastqc.html ||
-|232_R1_40k_fastqc.zip ||
-|232_R2_40k.fastq ||
-|232_R2_40k.fastq.trimmed.paired.fq.gz_fastqc.html ||
-|232_R2_40k.fastq.trimmed.paired.fq.gz_fastqc.zip ||
+|232_R1_40k.fastq.trimmed.paired.fq.gz_fastqc.html | QC report on trimmed forward read file|
+|232_R1_40k.fastq.trimmed.paired.fq.gz_fastqc.zip | zipped verion of prior file|
+|232_R1_40k.fastq_trimming_report.txt | QC stats on trimmed forward read file|
+|232_R1_40k.old | original forward read file |
+|232_R1_40k_fastqc.html | QC report on original forward read file|
+|232_R1_40k_fastqc.zip | zipped version of prior file |
+|232_R2_40k.fastq.trimmed.paired.fq.gz_fastqc.html | QC report on trimmed reverse read file|
+|232_R2_40k.fastq.trimmed.paired.fq.gz_fastqc.zip | zipped version of prior file |
 |232_R2_40k.fastq_trimming_report.txt ||
-|232_R2_40k.old ||
-|232_R2_40k_fastqc.html ||
-|232_R2_40k_fastqc.zip ||
-|F.QCed.fasta ||
-|F.QCed.fastq ||
-|R.QCed.fasta ||
-|R.QCed.fastq  | Reverse reads after QC in fastQ format |
+|232_R2_40k.old | original reverse read file |
+|232_R2_40k_fastqc.html | QC report on original reverse read file |
+|232_R2_40k_fastqc.zip | zipped version of prior file |
+|F.QCed.fasta | Trimmed forward read file in fasta format |
+|F.QCed.fastq | Trimmed forward read file in fastq format |
+|R.QCed.fasta | Trimmed reverse read file in fasta format |
+|R.QCed.fastq | Trimmed reverse read file in fastq format |
 
 
 
