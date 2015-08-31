@@ -119,25 +119,25 @@ perl Illumina_Trim.pl 232_R1_40k.fastq.gz 232_R2_40k.fastq.gz
 
 ```sh 
 
- Name | Description |
+ File | Description |
  :--- | :---------- |
 |232_R1_40k.fastq ||
-|232_R1_40k.fastq.trimmed.paired.fq.gz_fastqc.html
-|232_R1_40k.fastq.trimmed.paired.fq.gz_fastqc.zip
-|232_R1_40k.fastq_trimming_report.txt
-|232_R1_40k.old
-|232_R1_40k_fastqc.html
-|232_R1_40k_fastqc.zip
-|232_R2_40k.fastq
-|232_R2_40k.fastq.trimmed.paired.fq.gz_fastqc.html
-|232_R2_40k.fastq.trimmed.paired.fq.gz_fastqc.zip
-|232_R2_40k.fastq_trimming_report.txt
-|232_R2_40k.old
-|232_R2_40k_fastqc.html
-|232_R2_40k_fastqc.zip
-|F.QCed.fasta
-|F.QCed.fastq
-|R.QCed.fasta
+|232_R1_40k.fastq.trimmed.paired.fq.gz_fastqc.html ||
+|232_R1_40k.fastq.trimmed.paired.fq.gz_fastqc.zip ||
+|232_R1_40k.fastq_trimming_report.txt ||
+|232_R1_40k.old ||
+|232_R1_40k_fastqc.html ||
+|232_R1_40k_fastqc.zip ||
+|232_R2_40k.fastq ||
+|232_R2_40k.fastq.trimmed.paired.fq.gz_fastqc.html ||
+|232_R2_40k.fastq.trimmed.paired.fq.gz_fastqc.zip ||
+|232_R2_40k.fastq_trimming_report.txt ||
+|232_R2_40k.old ||
+|232_R2_40k_fastqc.html ||
+|232_R2_40k_fastqc.zip ||
+|F.QCed.fasta ||
+|F.QCed.fastq ||
+|R.QCed.fasta ||
 |R.QCed.fastq  | Reverse reads after QC in fastQ format |
 ```
 
