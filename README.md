@@ -70,5 +70,10 @@ DOCKER ‘bwawrik/bioinformatics:latest’ Software contents:
 
 ### PROCEDURE
 
+
+https://github.com/OUGenomics/HSC/raw/master/scripts/Illumina_Trim.pl
+
+
+
 [[.... COMNING SOON]]
 
