@@ -176,6 +176,9 @@ foreach my $s (@Ranalysis)
      }
   }
 
+push (@adapter_array, "-b GATCGGAAGAGCACACGTCTGAACTCCAGTCAC");
+push (@adapter_array, "-b AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT");
+#push (@adapter_array, "-b AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTAGATCTCGGTGGTCGCCGTATCATT");
 push (@adapter_array, "-e 0.15");
 push (@adapter_array, "-q ".$minQ);
 push (@adapter_array, "-n 2");
